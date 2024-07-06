@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .button:hover {
+            background-color: lightcoral;
+        }
+        .button:active {
+            background-color: lightgreen;
+        }
+        .button:focus {
+            outline: 2px solid darkblue;
+        }
+        .list-item:nth-child(even) {
+            background-color: lightgray;
+        }
+        .list-item:nth-child(odd) {
+            background-color: white;
+        }
+        .box::before {
+            content: 'Before';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background-color: yellow;
+            padding: 5px;
+        }
+        .box::after {
+            content: 'After';
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+    <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+        <li class="list-item">Item 4</li>
+    </ul>
+    <div class="box" style="position: relative; width: 100px; height: 100px; background-color: lightblue; margin: 50px 0;">Box</div>
+</body>
+</html>

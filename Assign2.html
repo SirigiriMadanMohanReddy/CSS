@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS colors </title>
+        <style>
+            body {
+                font-family: 'Times New Roman';
+                margin: 20px;
+            }
+            .color-demo {
+                      width:200px;
+                      height:200px;
+                      margin:20px;
+                      display:inline-block;
+            }
+            .color-demo.color{
+                color:blue;
+            }
+            .color-demo.background-color{
+                background-color:burlywood;
+            }
+            .color-demo.gradient {
+                background-image: linear-gradient(to bottom, red, yellow, green);
+            }
+            .background-demo{
+                width: 200px;
+                height:200px;
+                margin:20px;
+                display:inline-block;
+            }
+            .background-demo.image{
+                background-image: url("https://www.w3schools.com/css/paris.jpg");
+                background-repeat: no-repeat;
+                background-position:center;
+             }
+             .backgrpund-demo.repeat{
+                background-image: url("https://www.w3schools.com/css/paris.jpg");
+                background-repeat: repeat;
+             }
+             .background-demo.position{
+                background-image: url("https://www.w3schools.com/css/paris.jpg");
+                background-position: right top;
+             }
+
+         </style>
+         </head>
+         <body>
+            <h2>color properties</h2>
+            <div class="color-demo-color"> This is color demo</div>
+            <div class="color-demo-background-color">This elemnt as color demo backgroundcolor</div>
+            <div class="color-demo-gradient"> This element has a gradient </div>
+            <h2> Background properties</h2>
+            <div class="background-demo-image">This element has a backgorund image with no repeat and centered </div>
+            <div class="background- demo repeat"> Thsi element has background image with repeat</div>
+            <div class="backgorund-demo position"> This element has a background image  right aligned and top position</div>
+         </body>
+</html>

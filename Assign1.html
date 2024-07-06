@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Create a Sample web Page </title>
+        <style>
+            p {
+                color:blue;
+                font-size: 15px;
+            }
+            .data {
+                background-color: aqua;
+                padding:5px;
+            }
+            #special {
+                font-size: 10px;
+                font-weight: bold;
+            }
+            a[href] {
+                text-decoration: none;
+                color:#337ab7; 
+            }
+            a.active{
+                color:aqua;
+            }
+            p::first-letter{
+                font-size: 20px;
+                color: bisque;
+            }
+            span::after{
+                content:"(span elemnet)";
+                color:darkgreen
+            }
+        </style>
+        
+    </head>
+    <body>
+        <p>welcome to my home </p>
+        <p class="data">This a function of class "data"</p>
+        <p id="special">This is a  paragraph  has an id "special"</p>
+        <a href=" https://www.skolar.in/"> Skolar </a>
+        <ul>
+          <li><a href="#" class="active"> Courses</a></li>
+          <li><a href="#"> More</a></li>
+          <li><a href="#"> Sign in</a></li>
+        </ul>
+        <p> This  is contain<span> Span element</span> with pseudo-element</p>
+    </body>
+</html>

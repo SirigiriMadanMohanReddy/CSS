@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Override Bootstrap styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .card {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Using Bootstrap</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>Card 1</h2>
+                    <p>This is a Bootstrap card with custom styles applied.</p>
+                    <a href="#" class="btn btn-primary">Primary Button</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <p>Another Bootstrap card with custom styles applied.</p>
+                    <a href="#" class="btn btn-primary">Primary Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional, for components that require JS) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
